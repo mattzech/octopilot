@@ -47,7 +47,7 @@ require (
 	github.com/nwaples/rardecode v1.0.0 // indirect
 	github.com/otiai10/copy v1.6.0
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
-	github.com/rs/xid v1.3.0
+	github.com/rs/xid v1.4.0
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/pflag v1.0.5
