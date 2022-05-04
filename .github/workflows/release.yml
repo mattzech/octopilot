@@ -20,8 +20,11 @@ jobs:
         run: echo ::set-output name=TAG::${GITHUB_REF##*/}
 
       - name: Login to GitHub Packages Docker Registry
-        run: |
-          docker login -u mattzech -p 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
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/setup-go@v2.1.4
         with:
