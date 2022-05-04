@@ -16,7 +16,7 @@ import (
 )
 
 func cloneGitRepository(ctx context.Context, repo Repository, localPath string, options GitHubOptions) (*git.Repository, error) {
-	url := fmt.Sprintf("https://github.com/%s.git", repo.FullName())
+	url := fmt.Sprintf("https://github.worldpay.com/%s.git", repo.FullName())
 
 	branch := "HEAD"
 	if b, ok := repo.Params["branch"]; ok && strings.TrimSpace(b) != "" {
