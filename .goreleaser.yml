@@ -19,11 +19,7 @@ archives:
 dockers:
   - dockerfile: Dockerfile.goreleaser
     image_templates:
-      - "ghcr.io/dailymotion-oss/{{.ProjectName}}:{{ .Version }}"
-      - "ghcr.io/dailymotion-oss/{{.ProjectName}}:{{ .Tag }}"
-      - "ghcr.io/dailymotion-oss/{{.ProjectName}}:v{{ .Major }}"
-      - "ghcr.io/dailymotion-oss/{{.ProjectName}}:v{{ .Major }}.{{ .Minor }}"
-      - "ghcr.io/dailymotion-oss/{{.ProjectName}}:latest"
+      - "ghcr.io/mattzech/{{.ProjectName}}:latest"
     build_flag_templates:
       - "--pull"
       - "--label=org.opencontainers.image.created={{.Date}}"
